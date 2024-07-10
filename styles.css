@@ -1,0 +1,313 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  background-color: #4A7A2A;
+  width: 250px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.sidebar h1 {
+  font-size: 36px;
+}
+
+.sidebar h1 span {
+  color: #FF4C4C;
+}
+
+.hol-name{
+  font-family: "Dancing Script", cursive;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+.profile h2 {
+  font-size: 24px;
+
+}
+.fa{
+  padding: 10px;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav ul li {
+  margin: 20px 0;
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+.nav ul li a:hover{
+  text-decoration: underline;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.main-content h1 {
+  font-size: 32px;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.categories {
+  display: flex;
+  gap: 10px;
+}
+
+.categories button {
+  padding: 10px 20px;
+  border: 1px solid #4A7A2A;
+  border-radius:20px;
+  box-shadow: 1px 1.5px 1px 1.5px;
+  background-color: white;
+  color: #4A7A2A;
+  font-size: 16px;
+}
+
+.categories button:hover {
+  background-color: #F8BBD0;
+  color: white;
+}
+.categories a{
+  text-decoration: none;
+  color: #4A7A2A;
+}
+
+.item {
+  background-color: #F8BBD0;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+.item p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.item p span {
+  display: block;
+}
+
+.item img {
+  display: block;
+  margin: 10px auto 0;
+  width: 50px;
+  height: 50px;
+}
+
+.main-content h2 {
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+.all-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 5px;
+}
+
+.product {
+  background-color: #E0F2F1;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.product img {
+  width: 70px;
+  height: 70px;
+}
+
+.product p {
+  margin: 10px 0 0;
+  font-size: 18px;
+}
+
+.cart{
+  text-align: center;
+  background-color: #4A7A2A;
+  margin-top: 100px;
+  padding: 60px 10px 60px 10px;
+  border-radius: 40px;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart ul li {
+  margin: 10px 0px;
+}
+
+.product-detail{
+  text-align: center;
+  background-color: #FF69B4;
+  /* background: linear-gradient(#FF69B4 #4A7A2A); */
+  /* background: linear-gradient( #FF69B4, #a2eda2); */
+  padding: 10px;
+ 
+}
+
+#product-image{
+  background-color: #FFC0CB;
+  border-radius: 30px;
+}
+#product-price{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+.product-p{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+
+}
+#product-name{
+  font-family: "Dancing Script", cursive;
+}
+.p-btn{
+  padding: 10px 20px 10px 20px; 
+  margin-bottom: 30px;
+  border-radius: 20px;
+  border: none;
+}
+
+.container{
+  margin: 0;
+  padding: 0;
+
+}
+/* Add these styles to your existing styles.css file */
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.dashboard-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.333% - 40px);
+  min-width: 250px;
+}
+
+.dashboard-item h2 {
+  margin: 0 0 10px;
+}
+
+.dashboard-item p,
+.dashboard-item ul {
+  margin: 0;
+}
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100px;
+  /* align-content: center; */
+  background: #4A7A2A;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #FF69B4;
+}
+
+
+
+
+
+
+
+/* @media (max-width: 768px) {
+  .nav .nav-list {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .nav .nav-list.active {
+      display: flex;
+  }
+
+  .nav .menu-toggle {
+      display: block;
+  }
+
+  .top-section {
+      flex-direction: column;
+  }
+
+  .categories {
+      flex-wrap: wrap;
+  }
+
+  .item {
+      margin-top: 20px;
+  }
+} */
+

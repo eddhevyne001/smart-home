@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Smart Homes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ress/ress/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" style="background-color: #FFC0CB;">
+        <aside class="sidebar">
+            <h1>Smart <span>Homes</span></h1>
+            <div class="profile">
+                <img src="ress/ress/female (2).png" alt="Profile Image">
+                <h2 class="hol-name">Penelope Miya</h2>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                    <li><a href="dashboard.html"><i class="fa fa-desktop" aria-hidden="true"></i>Dashboard</a></li>
+                    <li><a href="payment.html"><i class="fa fa-credit-card" aria-hidden="true"></i>Payment Details</a></li>
+                    <li><a href="contactus.html"><i class="fa fa-phone" aria-hidden="true"></i>Contact Us</a></li>
+                    <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>View Cart</a></li>
+                    <li><a href="notifications.html"><i class="fa fa-bell" aria-hidden="true"></i>Notifications</a></li>
+                    <li><a href="settings.html"><i class="fa fa-cog" aria-hidden="true"></i>Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <h1 class="main-name">Dashboard</h1>
+            <section class="dashboard">
+                <div class="dashboard-item">
+                    <h2>Total Orders</h2>
+                    <p id="total-orders">0</p>
+                </div>
+                <div class="dashboard-item">
+                    <h2>Total Spent</h2>
+                    <p>R<span id="total-spent">0.00</span></p>
+                </div>
+                <div class="dashboard-item">
+                    <h2>Favorite Category</h2>
+                    <p id="favorite-category">None</p>
+                </div>
+                <div class="dashboard-item">
+                    <h2>Recent Purchases</h2>
+                    <ul id="recent-purchases"></ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

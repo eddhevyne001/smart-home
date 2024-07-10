@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Homes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ress/ress/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="product.html">
+    
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+        <h1>Smart <span>Homes</span></h1>
+        <div class="profile">
+            <img src="ress/ress/female (2).png" alt="Profile Image">
+            <h2 class="hol-name">Penelope Miya</h2>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                <li><a href="dashboard.html"><i class="fa fa-desktop" aria-hidden="true"></i>Dashboard</a></li>
+                <li><a href="#"><i class="fa fa-credit-card" aria-hidden="true"></i>Payment Details</a></li>
+                <li><a href="contactus.html"><i class="fa fa-phone" aria-hidden="true"></i>Contact Us</a></li>
+                <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>View Cart</a></li>
+                <li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i>Notifications</a></li>
+                <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i>Settings</a></li>
+            </ul>
+        </nav>
+        </aside>
+
+        <main class="main-content">
+        <h1 class="main-name">Welcome To Smart Homes</h1>
+        <div class="top-section">
+            <div class="categories">
+            <button><a href="">All</a></button>
+            <button><a href="">Bedroom</a></button>
+            <button><a href="">Kitchen</a></button>
+            <button><a href="">Bathroom</a></button>
+            
+            </div>
+            <div class="item">
+            <p>Modern Wall <span>Desk clock</span> <span>R149.99</span></p>
+            <img src="ress/ress/clock-removebg-preview.png" alt="Desk Clock">
+            </div>
+        </div>
+        <div>
+            <h2>All Items</h2>
+        </div>
+
+
+        <section class="all-items">
+            <div class="product" onclick="showProduct('Aesthetic Mugs', 'ress/ress/mediamodifier-zYs06jGwx7Y-unsplash__1_-removebg-preview.png', 249.99)">
+                <img src="ress/ress/mediamodifier-zYs06jGwx7Y-unsplash__1_-removebg-preview.png" alt="Mug">
+                <p>Aesthetic Mugs</p>
+                <p class="price">R249.99</p>
+            </div>
+            <div class="product" onclick="showProduct('Decorative Pillows', 'ress/ress/mediamodifier-UR_eZMMmVn4-unsplash__1_-removebg-preview.png', 249.99)">
+                <img src="ress/ress/mediamodifier-UR_eZMMmVn4-unsplash__1_-removebg-preview.png" alt="Pillow">
+                <p>Decorative Pillows</p>
+                <p class="price">R249.99</p>
+            </div>
+            <div class="product" onclick="showProduct('Another Mug', 'ress/ress/mediamodifier-zYs06jGwx7Y-unsplash__1_-removebg-preview.png', 249.99)">
+                <img src="ress/ress/mediamodifier-zYs06jGwx7Y-unsplash__1_-removebg-preview.png" alt="Mug">
+                <p>Another Mug</p>
+                <p class="price">R249.99</p>
+            </div>
+        </section>
+
+        <section class="all-items">
+            <div class="product" onclick="showProduct('Aesthetic Mugs', 'ress/ress/mediamodifier-zYs06jGwx7Y-unsplash__1_-removebg-preview.png', 249.99)">
+                <img src="ress/ress/mediamodifier-zYs06jGwx7Y-unsplash__1_-removebg-preview.png" alt="Mug">
+                <p>Aesthetic Mugs</p>
+                <p class="price">R249.99</p>
+            </div>
+            <div class="product" onclick="showProduct('Decorative Pillows', 'ress/ress/mediamodifier-UR_eZMMmVn4-unsplash__1_-removebg-preview.png', 249.99)">
+                <img src="ress/ress/mediamodifier-UR_eZMMmVn4-unsplash__1_-removebg-preview.png" alt="Pillow">
+                <p>Decorative Pillows</p>
+                <p class="price">R249.99</p>
+            </div>
+            <div class="product" onclick="showProduct('Another Mug', 'ress/ress/mediamodifier-zYs06jGwx7Y-unsplash__1_-removebg-preview.png', 249.99)">
+                <img src="ress/ress/mediamodifier-zYs06jGwx7Y-unsplash__1_-removebg-preview.png" alt="Mug">
+                <p>Another Mug</p>
+                <p class="price">R249.99</p>
+            </div>
+        </section>
+
+
+        <section class="product-detail" id="product-detail" style="display: none;">
+            <h2 id="product-name"></h2>
+            <img id="product-image" src="" alt="Product Image">
+            <p>Price: R<span id="product-price"></span></p>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="showHome()">Back to Home</button>
+        </section>
+        <section class="cart" id="cart" style="display: none;">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: R<span id="total-price">0</span></p>
+            <button onclick="showHome()">Continue Shopping</button>
+        </section>
+
+
+
+
+        <!-- <section class="all-items">
+            <div class="product">
+            <img src="ress/ress/mediamodifier-zYs06jGwx7Y-unsplash__1_-removebg-preview.png" alt="Mug">
+            <p>Aesthetic Mugs</p>
+            <p id="price">R249.99</p>
+            </div>
+            <div class="product">
+            <img src="ress/ress/mediamodifier-UR_eZMMmVn4-unsplash__1_-removebg-preview.png" alt="Pillow">
+            <p>Decorative Pillows</p>
+            <p id="price">R249.99</p>
+            </div>
+            <div class="product">
+            <img src="ress/ress/mediamodifier-zYs06jGwx7Y-unsplash__1_-removebg-preview.png" alt="Mug">
+            <p>Another Mug</p>
+            <p id="price">R249.99</p>
+            </div>
+        </section>
+
+        <section class="all-items">
+            <div class="product">
+            <img src="ress/ress/mediamodifier-zYs06jGwx7Y-unsplash__1_-removebg-preview.png" alt="Mug">
+            <p>Aesthetic Mugs</p>
+            <p id="price">R249.99</p>
+            </div>
+            <div class="product">
+            <img src="ress/ress/mediamodifier-UR_eZMMmVn4-unsplash__1_-removebg-preview.png" alt="Pillow">
+            <p>Decorative Pillows</p>
+            <p id="price">R249.99</p>
+            </div>
+            <div class="product">
+            <img src="ress/ress/mediamodifier-zYs06jGwx7Y-unsplash__1_-removebg-preview.png" alt="Mug">
+            <p>Another Mug</p>
+            <p id="price">R249.99</p>
+            </div>
+        </section> -->
+        </main>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

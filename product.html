@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ress/ress/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h1>Smart <span>Homes</span></h1>
+            <div class="profile">
+                <img src="ress/ress/female (2).png" alt="Profile Image">
+                <h2 class="hol-name">Penelope Miya</h2>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                    <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>View Cart</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <section class="product-detail">
+                <h2 id="product-name"></h2>
+                <img id="product-image" src="" alt="Product Image">
+                <p class="product-p">Price: R<span id="product-price"></span></p>
+                <button class="p-btn" onclick="addToCart()">Add to Cart</button>
+                <button class="p-btn"  onclick="window.location.href='index.html'">Back to Home</button>
+            </section>
+        </main>
+    </div>
+    <script>
+        document.getElementById('product-name').innerText = localStorage.getItem('productName');
+        document.getElementById('product-image').src = localStorage.getItem('productImage');
+        document.getElementById('product-price').innerText = localStorage.getItem('productPrice');
+
+        function addToCart() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const name = localStorage.getItem('productName');
+            const price = parseFloat(localStorage.getItem('productPrice'));
+
+            cart.push({ name, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            alert('Product added to cart');
+        }
+    </script>
+</body>
+</html>
